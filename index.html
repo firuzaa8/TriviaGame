@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Mansalva|Merienda|Monoton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+    <title>Total Trivial Trivia</title>
+
+</head>
+<body>
+    <div class="jumbotron overflow-auto">
+        <div class="display-4">Totally Trivial Trivia</div>
+        <button id="start">Start</button>
+        <div id="game">
+            <h3>Time Remaining: <span id="countdown"></span> seconds</h3>
+            <form class="q">
+                <p id="question">What did Alfred Nobel develop?</p>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="inc">
+                    <label class="form-check-label" for="inlineRadio1">Nobelium</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="ans">
+                    <label class="form-check-label" for="inlineRadio2">Dynamite</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="inc">
+                    <label class="form-check-label" for="inlineRadio3">Atomic Bomb</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="inc">
+                    <label class="form-check-label" for="inlineRadio4">Gunpowder</label>
+                </div>
+            </form>
+
+            <form class="q">
+                <p id="question">What was the first successful vaccine developed in history?</p>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="inc">
+                    <label class="form-check-label" for="inlineRadio1">Scarlet Fever</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="inc">
+                    <label class="form-check-label" for="inlineRadio2">Cholera</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="ans">
+                    <label class="form-check-label" for="inlineRadio3">Smallpox</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="inc">
+                    <label class="form-check-label" for="inlineRadio4">Rabies</label>
+                </div>
+            </form>
+
+            <form class="q">
+                <p id="question">Which country hosted the Summer Olympics in 2016?</p>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="inc">
+                    <label class="form-check-label" for="inlineRadio1">Spain</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="ans">
+                    <label class="form-check-label" for="inlineRadio2">Brazil</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="inc">
+                    <label class="form-check-label" for="inlineRadio3">China</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="inc">
+                    <label class="form-check-label" for="inlineRadio4">Greece</label>
+                </div>
+            </form>
+            
+            <form class="q">
+                <p id="question">What is the color of Donald Duck's bowtie?</p>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="inc">
+                    <label class="form-check-label" for="inlineRadio1">Green</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="inc">
+                    <label class="form-check-label" for="inlineRadio2">Yellow</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="inc">
+                    <label class="form-check-label" for="inlineRadio3">Blue</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="ans">
+                    <label class="form-check-label" for="inlineRadio4">Red</label>
+                </div>
+            </form>
+            <form class="q">
+                <p id="question">Other than eggs, what is a primary ingredient in Eggs Florentine?</p>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="inc">
+                    <label class="form-check-label" for="inlineRadio1">Ham</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="inc">
+                    <label class="form-check-label" for="inlineRadio2">Gorgonzola</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="ans">
+                    <label class="form-check-label" for="inlineRadio3">Spinach</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="inc">
+                    <label class="form-check-label" for="inlineRadio4">Avocado</label>
+                </div>
+            </form>
+
+            <form class="q">
+                <p id="question">What temperature is the same in Celsius and Fahrenheit?</p>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="inc">
+                    <label class="form-check-label" for="inlineRadio1">+100°</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="inc">
+                    <label class="form-check-label" for="inlineRadio2">+32°</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="inc">
+                    <label class="form-check-label" for="inlineRadio3">+40°</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="ans">
+                    <label class="form-check-label" for="inlineRadio4">-40°</label>
+                </div>
+            </form>
+
+            <form class="q">
+                <p id="question">According to Persian folklore, who is the storyteller of 'One Thousand and One Nights'?</p>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="inc">
+                    <label class="form-check-label" for="inlineRadio1">Hatshepsut</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="ans">
+                    <label class="form-check-label" for="inlineRadio2">Scheherazade</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="inc">
+                    <label class="form-check-label" for="inlineRadio3">Kanaan</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="inc">
+                    <label class="form-check-label" for="inlineRadio4">Homer</label>
+                </div>
+            </form>
+            
+            <form class="q">
+                <p id="question">In which language was the book 'War and Peace' originally written?</p>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="inc">
+                    <label class="form-check-label" for="inlineRadio1">French</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="inc">
+                    <label class="form-check-label" for="inlineRadio2">German</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="inc">
+                    <label class="form-check-label" for="inlineRadio3">English</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="ans">
+                    <label class="form-check-label" for="inlineRadio4">Russian</label>
+                </div>
+                <br>
+            </form>
+        </div>
+
+        <button id="done">Done</button>
+        <div id="stats">
+            <div class="correct-answers">Correct Answers:<span id="number1"></span></div>
+            <div class="incorrect-answers">Incorrect Answers:<span id="number2"></span></div>
+            <div class="unanswered">Unanswered:<span id="number3"></span></div>
+        </div>
+    </div>    
+</body>
+</html>

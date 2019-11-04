@@ -1,0 +1,60 @@
+body {
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+}
+.jumbotron {
+height: 600px;
+width: 60%;
+margin-left: 20%;
+margin-top: 10%;
+background-color: #F6C8A2; 
+border:solid black;
+background-image: linear-gradient(to bottom, #dacdb1 11%, #f0e8d8 56%);
+box-shadow: 0 0 65px #cdbe9f inset, 0 0 20px #beae8c inset;
+}
+.display-4 {
+font-family: 'Monoton', cursive;
+margin-left: 15%;
+margin-bottom: 30px;
+}
+#start, #done {
+padding: 25px 70px 25px 70px;
+display: center;
+background-color: #F6C8A2;
+border: solid #D86F18;
+font-family:'Mansalva', cursive;
+font-size: 32px;
+margin-bottom: 30px;
+margin-top: 30px;
+margin-left: 40%;
+}
+h3 {
+font-size: 24px;
+margin-bottom: 30px;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+margin-left:30%;
+font-weight: bolder;
+}
+#question{
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-size: 25px;
+margin-left: 15%;
+}
+.form-check-inline {
+    margin-left: 2%;
+}
+label {
+    font-family: 'Merienda', cursive;
+    font-weight:bold;
+  }
+  #inlineRadio1 {
+      margin-left: 250px;
+  }
+  .all-done, .correct-answers, .incorrect-answers, .unanswered, #number1, #number2, #number3 {
+    font-size: 24px;
+    margin-bottom: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left:35%;
+    font-weight: bolder;
+    margin-top:30px;
+  }
